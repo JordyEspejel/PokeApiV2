@@ -1,0 +1,35 @@
+.pokemon-image {
+  cursor: pointer;
+  img {
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    width: 205px;
+    margin-bottom: 5px;
+  }
+}
+
+.pokemon-detail {
+  cursor: default;
+  .id {
+    color: #919191;
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+  .name {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .types {
+    font-size: 9px;
+    margin-top: 13px;
+    span {
+      margin-right: 5px;
+    }
+  }
+}
+
+:host {
+  * {
+    font-family: 'Press Start 2P', cursive;
+  }
+}

@@ -1,0 +1,42 @@
+.container {
+  @include flex-inner-container;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 25px;
+  font-size: 17px;
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+    font-family:'Raleway', sans-serif;
+  }
+  .muted {
+    color: #616161;
+  }
+}
+
+.details {
+  padding-left: 15px;
+}
+
+.img-container {
+  background-color: #F2F2F2;
+  width: 60%;
+  img {
+    width: 100%;
+  }
+}
+
+.details-container {
+  display: flex;
+  font-family: 'Raleway', sans-serif;;
+
+  .img-container {
+    min-width: 380px;
+  }
+}
+
+span.type {
+  font-weight: bold;
+  margin-right: 5px;
+}

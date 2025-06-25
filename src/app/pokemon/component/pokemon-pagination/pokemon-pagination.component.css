@@ -1,0 +1,44 @@
+btns {
+  margin-left: -14.7vw;
+  margin-right: -14.7vw;
+  background: #a4a4a4;
+  display: flex;
+  font-family:'Raleway', sans-serif;;
+
+  a {
+    font-size: 12px;
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+    width: 50%;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #30a7d7;
+    }
+
+    &.disabled {
+      pointer-events: none;
+    }
+
+    > span {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+  .previous {
+    padding-left: 14.7vw;
+  }
+  .next {
+    padding-left: 14.7vw;
+  }
+}
+
+.white {
+  color: white;
+}
