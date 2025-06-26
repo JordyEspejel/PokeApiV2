@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Pokemon } from '../../models/pokemon.model';
 import { Subscription } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -18,7 +18,7 @@ import { subscribe } from 'diagnostics_channel';
   templateUrl: './pokemon-detail.component.html',
   styleUrl: './pokemon-detail.component.css'
 })
-export class PokemonDetailComponent {
+export class PokemonDetailComponent implements OnInit, OnDestroy{
   pokemon!: Pokemon;
   previous?: Pokemon;
   next?: Pokemon;

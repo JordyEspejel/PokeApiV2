@@ -1,9 +1,10 @@
 <div class="btns">
   <a (click)="onClickBtn('prev')" class="previous" [class.disabled]="!previous">
     <ng-container *ngIf="previous">
-      <span> <<span class="white"> N.º {{ previous.id | padStart:4 }}</span> {{ previous.name | titlecase }}</span>
+      <span><<span class="white"> N.º {{ previous.id | padStart:4 }}</span> {{ previous.name | titlecase }}</span>
     </ng-container>
   </a>
+
   <a (click)="onClickBtn('next')" class="next" [class.disabled]="!next">
     <ng-container *ngIf="next">
       <span>{{ next.name | titlecase }} <span class="white">N.º {{ next.id | padStart:4 }}</span> ></span>
